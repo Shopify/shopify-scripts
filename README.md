@@ -67,7 +67,7 @@ This API differs from the Liquid variables exposed to scripts. These are used by
    Scripts are not supported in the wholesale channel checkout  
    Scripts do not fire when used in conjunction with the Buy Button  
    Scripts do not fire when sending a draft order invoice to a customer  
-   _Note: Scripts DO fire if using checkout permalinks_
+   Note: Scripts DO fire if using checkout permalinks  
    
 - Scripts cannot display messaging in the checkout without modifications to checkout.liquid
 - Theme modifications are required to show the discount off of the original price and any messages in the cart
