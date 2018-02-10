@@ -5,3 +5,6 @@ Whether it’s a special holiday sale, or a flash sale to attract customers, not
 ### What it does
 
 Pretty simply, this script will apply 10% off to every item, for every order in your store.
+
+### Credit
+[Gavin Ballard](https://gist.github.com/gavinballard/0b274716792a8408e3e9a41561bf9a02)
