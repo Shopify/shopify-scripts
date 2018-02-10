@@ -4,7 +4,7 @@ This script provides every buyer an incentive to buy multiples and make a larger
 
 ### What does it do?
 
-By default, you can offer a tiered discount by `product_types` (line 5). Adjust this value according to which product type you would like to offer the tiered discount on (Reflected by the `Product Type` field against your products in the admin.
+By default, you can offer a tiered discount by `product_types` (line 5). Adjust this value according to which product type you would like to offer the tiered discount on (Reflected by the `Product Type` field against your products in the admin).
 
 Lines 8-20 are your discount tiers. For example in the default script it is:  
    Buy 10, get 10% off  
