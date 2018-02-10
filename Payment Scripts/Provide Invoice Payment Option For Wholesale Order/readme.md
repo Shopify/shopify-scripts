@@ -15,4 +15,4 @@ _Note: this script can be utilized for Wholesale customers on the regular online
    - Only customers with the appropriate tag will be presented with the invoice payment option at checkout.
 
 #### Credit
-[Gavin Ballard](<script src="https://gist.github.com/gavinballard/094b7f456352c4946fb97656e90654cb.js"></script>)
+[Gavin Ballard](https://gist.github.com/gavinballard/094b7f456352c4946fb97656e90654cb)
