@@ -4,7 +4,9 @@ You can use a line item script to temporarily stop customers from applying a dis
 
 ### What does it do?
 
-When running this script, customers will not be able to apply any existing discount codes.
+When running this script, customers will not be able to apply any discount codes.
+
+You can adjust the message shown to customers on line 6.
 
 #### Credit
 
