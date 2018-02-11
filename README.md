@@ -30,7 +30,7 @@ When searching for a script to use, first open the relevant folder for the scrip
 When submitting a script:
 - Ensure you are submitting your script within the relevant folder
 - Create a new folder for your script and name it appropriately
-- Include a README.md file explaining what the script does and any other appropriate information using this format.
+- Include a README.md file explaining what the script does and any other appropriate information using [this format](https://github.com/Shopify/shopify-scripts/blob/master/CONTRIBUTING.md).
 - Include your script as a <scriptname>.rb file
 - Submit a Pull Request to have your script added to the repository
 
