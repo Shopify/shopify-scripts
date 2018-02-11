@@ -4,7 +4,7 @@ A small, unexpected extra can be a wonderful, cost-effective, way to make a cust
 
 ### How does it work?
 
-- Define the Product ID of the free gift you want to give away for qualifying purchases
+- Define the Product ID of the free gift you want to give away for qualifying purchases on line two using `FREE_GIFT_PRODUCT_ID`
 - Change the message you want to displayed to qualifying customers on line 13
 - Line 5 checks that there is more than 1 item in the cart in order to qualify
 - Customers with at least one regular item and the gift in their cart, will see the gift discounted to $0
