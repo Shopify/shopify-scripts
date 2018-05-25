@@ -11,15 +11,14 @@ Remove the example settings (lines 20-42) from `script.rb`.
 Add two lists, `VENDOR_NOOP_${GROUP_NAME}` and `NOOP_${GROUP_NAME}`.
 
   1. Place vendor names in `VENDOR_NOOP_${GROUP_NAME}` formatted as a list
-  2. Input all the countries you want to include in `NOOP_${GROUP_NAME}` in (ISO 3166-1 alpha-2)[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2] format.
+  2. Input all the countries you want to include in `NOOP_${GROUP_NAME}` in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format.
 
-### Example
-
-#### Do not ship to the EU
-
+### Examples
+#### Disallow Multiple Vendors to be shipped to the EU
 In this example we do not allow the vendors `JordansAwesomeBrand` and `Example2` to be shipped to any EU countries.
 
-```VENDOR_NOOP_EU = ['JordansAwesomeBrand', 'Example2']
+```ruby
+VENDOR_NOOP_EU = ['JordansAwesomeBrand', 'Example2']
 NOOP_EU = ['AT', 'BE', 'BG', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'IM', 'HR', 'EL', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB']
 
 CAMPAIGNS = [
@@ -27,12 +26,13 @@ RemoveLineItemsCampaign.new(VENDOR_NOOP_EU, NOOP_EU)
 ]
 ```
 
-#### Do not ship to Oceania
+#### Disallow Single Vendor to be shipped to Oceania (Multiple Countries)
 
 In this example we do not allow the vendors `Example1` to be shipped to any Oceania countries.
 *limitation*: Hawaii is not supported because it uses the (ISO 3166-1 alpha-2)[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2] code of the USA.
 
-```VENDOR_NOOP_OCEANIA = ['Example1']
+```ruby
+VENDOR_NOOP_OCEANIA = ['Example1']
 NOOP_OCEANIA = ['AU', 'NZ', 'NF', 'FJ', 'NC', 'PG', 'SB', 'VU', 'FM', 'GU', 'KI', 'MH', 'NR', 'MP', 'PW', 'UM', 'AS', 'CK', 'CL', 'PF', 'NU', 'PN', 'WS', 'TK', 'TO', 'TV', 'WF']
 
 CAMPAIGNS = [
@@ -40,12 +40,13 @@ RemoveLineItemsCampaign.new(VENDOR_NOOP_OCEANIA, NOOP_OCEANIA)
 ]
 ```
 
-#### Do not ship to the USA
+#### Disallow Single Vendor to be shipped to the US (single country)
 
-In this example we do not allow the vendors `Example3` to be shipped to any of the United States.
+In this example we do not allow the vendors `Example2` to be shipped to the US.
 
-```VENDOR_NOOP_US = ['Example3']
-NOOP_US = ['US']
+```ruby
+VENDOR_NOOP_US = ['Example2']
+NOOP_US = ['US']d
 
 CAMPAIGNS = [
 RemoveLineItemsCampaign.new(VENDOR_NOOP_US, NOOP_US)
@@ -57,16 +58,8 @@ RemoveLineItemsCampaign.new(VENDOR_NOOP_US, NOOP_US)
 ##### How to:
 Campaign is just a list, you can add another campaign to the list by adding a commar seperator `,` on the last campaign and then adding `RemoveLineItemsCampaign.new(VENDOR_NOOP_${GROUP_NAME}, NOOP_${GROUP_NAME})` on a new line.
 
-```...
-CAMPAIGNS = [
-RemoveLineItemsCampaign.new(...),
-RemoveLineItemsCampaign.new(VENDOR_NOOP_US, NOOP_US)
-]
+```ruby
 ...
-```
-
-##### Example: Oceania & USA
-```...
 CAMPAIGNS = [
 RemoveLineItemsCampaign.new(VENDOR_NOOP_OCEANIA, NOOP_OCEANIA),
 RemoveLineItemsCampaign.new(VENDOR_NOOP_US, NOOP_US)
