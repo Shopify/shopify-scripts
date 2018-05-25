@@ -18,6 +18,7 @@ Add two lists, `VENDOR_NOOP_${GROUP_NAME}` and `NOOP_${GROUP_NAME}`.
 #### Do not ship
 
 ##### Do not ship to the EU
+
 In this example we do not allow the vendors `JordansAwesomeBrand` and `Example2` to be shipped to any EU countries.
 
 ```VENDOR_NOOP_EU = ['JordansAwesomeBrand', 'Example2']
@@ -29,6 +30,7 @@ RemoveLineItemsCampaign.new(VENDOR_NOOP_EU, NOOP_EU)
 ```
 
 ##### Do not ship to Oceania
+
 In this example we do not allow the vendors `Example1` to be shipped to any Oceania countries.
 *limitation*: Hawaii is not supported because it uses the (ISO 3166-1 alpha-2)[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2] code of the USA.
 
@@ -41,6 +43,7 @@ RemoveLineItemsCampaign.new(VENDOR_NOOP_OCEANIA, NOOP_OCEANIA)
 ```
 
 ##### Do not ship to the USA
+
 In this example we do not allow the vendors `Example3` to be shipped to any of the United States.
 
 ```VENDOR_NOOP_US = ['Example3']
