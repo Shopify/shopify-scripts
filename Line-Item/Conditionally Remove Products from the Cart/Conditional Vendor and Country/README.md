@@ -46,7 +46,7 @@ In this example we do not allow the vendors `Example2` to be shipped to the US.
 
 ```ruby
 VENDOR_NOOP_US = ['Example2']
-NOOP_US = ['US']d
+NOOP_US = ['US']
 
 CAMPAIGNS = [
 RemoveLineItemsCampaign.new(VENDOR_NOOP_US, NOOP_US)
