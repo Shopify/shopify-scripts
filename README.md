@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Shopify Scripts is deprecated and will be removed on [August 28, 2025](https://changelog.shopify.com/posts/shopify-scripts-deprecation).
+
 # Shopify Scripts Public Repository
 
 Shopify Scripts are customizations written in Ruby that allow you to create personalized customer experiences. Using line item, shipping, and payment scripts you can implement custom logic and tailor the user experience during a customer’s checkout journey. Scripts are enabled on a store’s checkout by using the [Script Editor](https://help.shopify.com/manual/apps/apps-by-shopify/script-editor) app.
