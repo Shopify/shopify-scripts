@@ -1,5 +1,5 @@
 > [!CAUTION]
-> Shopify Scripts is deprecated and will be removed on [August 28, 2025](https://changelog.shopify.com/posts/shopify-scripts-deprecation).
+> Shopify Scripts is deprecated and will be removed on [August 28, 2025](https://changelog.shopify.com/posts/shopify-scripts-deprecation). Learn more in the [Shopify Help Center](https://help.shopify.com/en/manual/checkout-settings/script-editor/migrating) on migrating.
 
 # Shopify Scripts Public Repository
 
